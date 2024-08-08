@@ -1,6 +1,7 @@
-# The Problem
+# About this fork
+This fork tried to showcase a problem with the uberall script, which has been fixed by Uberall (thank you)! You can have a look at the commit history of this fork to learn about the problem within previous versions of this readme.
 
-When using different store-finders with different data-keys within a SPA, you get a "no-results" when switching between them. Only a full reload of the page solves this, which should not be a necessity in a SPA.
+This fork can still be used as a base for starting a single-page-application project with Uberall, since it contains are some minor improvements made to the codebase, making it easier to try out and debug the behavior of multiple store-finders within a react SPA.
 
 ## Changes made within this fork
 - Replaced `RouteWithoutStoreLocator.js` with new `EmptyPage.js` component to better reflect what it does
@@ -9,18 +10,7 @@ When using different store-finders with different data-keys within a SPA, you ge
 - The `App.js` now has two routes with a StoreFinder. Each uses a different `dataKey` and should display different results
 - Added console logs to see when which component executes its hooks and start/restart functions of the uberall script
 
-## Expected Behavior
-- When clicking on the second link named `Page with Store Locator 1 (Germany)`, which navigates me to `/with-store-locator-1`, I see results in Germany
-- When then clicking on the third link named `Page with Store Locator 2 (Netherlands)`, which navigates me to `/with-store-locator-2`, I see results for only the Netherlands
-
-## Actual Behavior
-- When clicking on the second link named `Page with Store Locator 1 (Germany)` which navigates me to `/with-store-locator-1`, I see results in Germany
-- When then clicking on the third link named `Page with Store Locator 2 (Netherlands)` which navigates me to `/with-store-locator-2`, __I see no results at all in the results list__, but I still see markers on the map of the stores in Germany
-- Reloading the page resolves the problem and shows the correct results for the Netherlands
-
-
 ---
-
 
 # Integrating the store-locator into a single-page-application (SPA)
 

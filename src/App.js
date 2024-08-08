@@ -10,9 +10,9 @@ function App() {
   return (
     <div className="page-wrapper">
       <div className="nav-bar">
-        <NavLink to="/">Page without Store Locator</NavLink>
-        <NavLink to="/with-store-locator-1">Page with Store Locator 1 (Germany)</NavLink>
-        <NavLink to="/with-store-locator-2">Page with Store Locator 2 (Netherlands)</NavLink>
+        <NavLink to="/">No Store Locator</NavLink>
+        <NavLink to="/with-store-locator-1">Store Locator 1</NavLink>
+        <NavLink to="/with-store-locator-2">Store Locator 2</NavLink>
       </div>
       <Routes>
         <Route path="/" element={<EmptyPage />} />
@@ -22,7 +22,7 @@ function App() {
             <StoreFinder
               isStoreFinderBundleLoaded={isStoreFinderBundleLoaded}
               setIsStoreFinderBundleLoaded={setIsStoreFinderBundleLoaded}
-              dataKey={"DE_Gebaeudetechnik_1075535"} // stores in Germany
+              dataKey={"AnRI9bQVEf7Vaiomh5qZCm1NNrJExo"} // stores in Germany
             />
           }
         />
@@ -32,7 +32,7 @@ function App() {
             <StoreFinder
               isStoreFinderBundleLoaded={isStoreFinderBundleLoaded}
               setIsStoreFinderBundleLoaded={setIsStoreFinderBundleLoaded}
-              dataKey={"KZQl4uVmMNAfozAHFe0qflB503OwlQ"} // stores in Netherlands
+              dataKey={"s8DAy2ux3eEuBt5K8EkMJVC9MLCEBf"} // stores in Netherlands
             />
           }
         />
